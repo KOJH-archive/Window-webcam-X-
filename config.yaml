@@ -1,0 +1,45 @@
+camera:
+  index: 0
+  backend: DSHOW
+  fps_active: 5
+  fps_idle: 1
+  width: 640
+  height: 480
+  stale_seconds: 3
+presence:
+  absence_seconds: 300
+  warn_before_seconds: 15
+  input_override: true
+  input_override_seconds: 30
+  min_face_confidence: 0.5
+power:
+  lock_before_sleep: false
+  resume_grace_seconds: 60
+  skip_if_processes: []
+posture:
+  enabled: true
+  sustained_seconds: 60
+  cooldown_minutes: 10
+  thresholds:
+    distance_ratio_max: 1.25
+    vertical_drop_ratio: 0.12
+    pitch_deg_max: 20
+    roll_deg_max: 15
+focus:
+  enabled: true
+  window_seconds: 60
+  weights:
+    facing_screen: 0.40
+    input_activity: 0.30
+    app_stability: 0.30
+  yaw_deg_limit: 25
+  pitch_deg_limit: 25
+  app_switch_penalty_per_switch: 0.15
+quiet:
+  pause_when_fullscreen: true
+storage:
+  db_path: "%LOCALAPPDATA%/DeskGuardian/guardian.db"
+  retention_days: 90
+observe:
+  interval_seconds: 5
+  csv_dir: "%LOCALAPPDATA%/DeskGuardian/metrics"

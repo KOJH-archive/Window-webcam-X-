@@ -1,0 +1,32 @@
+[server]
+address = "127.0.0.1"
+headless = true
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"
+primaryColor = "#17875F"
+backgroundColor = "#F7FAF9"
+secondaryBackgroundColor = "#ECF3F0"
+textColor = "#18231F"
+borderColor = "#D5E2DD"
+greenColor = "#17875F"
+orangeColor = "#B76A15"
+redColor = "#C94141"
+grayColor = "#607069"
+chartCategoricalColors = ["#17875F", "#4E8FA6", "#8B6CAF", "#D18B35", "#C95C62"]
+baseRadius = "12px"
+buttonRadius = "10px"
+showWidgetBorder = true
+showSidebarBorder = true
+font = "sans-serif"
+headingFontWeights = [650, 650, 600, 600, 600, 600]
+
+[theme.sidebar]
+backgroundColor = "#ECF3F0"
+secondaryBackgroundColor = "#DFEAE6"
+textColor = "#18231F"
+borderColor = "#D5E2DD"
+primaryColor = "#17875F"
